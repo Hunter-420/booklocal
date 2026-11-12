@@ -79,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onNavigate, currentU
 
       {/* Main Navbar */}
       <header className="sticky top-0 z-40 bg-[#FBF6EF]/95 backdrop-blur-md border-b border-[#E8DDCB]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 h-16 sm:h-18 flex items-center justify-between gap-4">
           {/* Brand */}
           <button
             onClick={() => handleLinkClick('booking')}

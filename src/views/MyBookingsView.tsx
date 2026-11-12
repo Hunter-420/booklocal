@@ -61,7 +61,7 @@ export const MyBookingsView: React.FC<MyBookingsViewProps> = ({ onNavigate }) =>
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-8 py-12 space-y-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-8 py-8 sm:py-10 space-y-6 sm:space-y-8">
       {/* Page Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E8DDCB] pb-6">
         <div>
