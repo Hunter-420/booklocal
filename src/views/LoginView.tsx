@@ -6,10 +6,15 @@ import { Profile } from '../lib/types';
 interface LoginViewProps {
   onNavigate: (tab: string) => void;
   onUserChange: (user: Profile) => void;
+  initialSignUp?: boolean;
 }
 
-export const LoginView: React.FC<LoginViewProps> = ({ onNavigate, onUserChange }) => {
-  const [isSignUp, setIsSignUp] = useState(false);
+export const LoginView: React.FC<LoginViewProps> = ({
+  onNavigate,
+  onUserChange,
+  initialSignUp = false,
+}) => {
+  const [isSignUp, setIsSignUp] = useState(initialSignUp);
   const [email, setEmail] = useState('sam.reed@example.com');
   const [password, setPassword] = useState('password123');
   const [fullName, setFullName] = useState('Samantha Reed');

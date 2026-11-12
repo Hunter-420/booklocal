@@ -18,11 +18,12 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const syncHash = () => {
-      const hash = window.location.hash.replace('#', '').trim();
-      if (!hash) {
+      const rawHash = window.location.hash.replace('#', '').trim();
+      const tab = rawHash.split('?')[0];
+      if (!tab) {
         setCurrentTab('booking');
       } else {
-        setCurrentTab(hash);
+        setCurrentTab(tab);
       }
     };
 
@@ -51,6 +52,14 @@ export const App: React.FC = () => {
         return <OwnerSettingsView />;
       case 'login':
         return <LoginView onNavigate={handleNavigate} onUserChange={setCurrentUser} />;
+      case 'signup':
+        return (
+          <LoginView
+            initialSignUp={true}
+            onNavigate={handleNavigate}
+            onUserChange={setCurrentUser}
+          />
+        );
       case 'contact':
         return <ContactView />;
       default:
