@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onNavigate, currentU
               Demo Mode
             </span>
             <span className="hidden sm:inline text-[#A3B3AA]">
-              Ponsonby Studio · Pacific/Auckland Timezone
+              Ponsonby Studio | Pacific/Auckland Timezone
             </span>
           </div>
 
@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, onNavigate, currentU
                 Willow & Stone
               </span>
               <span className="block font-body text-[11px] font-semibold text-[#6B7A72] uppercase tracking-widest mt-0.5">
-                Hair & Styling · Ponsonby
+                Hair & Styling, Ponsonby
               </span>
             </div>
           </button>

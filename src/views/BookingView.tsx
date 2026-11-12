@@ -100,7 +100,7 @@ export const BookingView: React.FC<BookingViewProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-8 py-8 sm:py-10 space-y-8 sm:space-y-10">
+    <div className="max-w-6xl mx-auto px-4 sm:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto space-y-3">
         <span className="text-xs font-bold uppercase tracking-wider text-[#1F4D3F]">
